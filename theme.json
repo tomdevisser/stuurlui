@@ -214,6 +214,21 @@
 					"text": "var(--wp--preset--color--primary)"
 				},
 				"shadow": "0px 1px 20px #3DDE9699"
+			},
+			"core/navigation-link": {
+				"border": {
+					"bottom": {
+						"color": "#E8EAEF",
+						"style": "dashed",
+						"width": "1px"
+					}
+				},
+				"spacing": {
+					"margin": {
+						"left": "18px",
+						"right": "18px"
+					}
+				}
 			}
 		}
 	},
