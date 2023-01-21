@@ -12,6 +12,7 @@ module.exports = {
 	...defaultConfig,
 	entry: {
 		pretitle: path.resolve(__dirname, '/blocks/pretitle', 'index.js'),
+		services: path.resolve(__dirname, '/blocks/services', 'index.js'),
 	},
 	output: {
 		path: path.resolve(__dirname, 'build'),
