@@ -187,5 +187,11 @@
 		}
 	},
 	"customTemplates": [],
-	"templateParts": []
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header",
+			"title": "Header"
+		}
+	]
 }
