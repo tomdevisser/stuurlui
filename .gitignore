@@ -1,0 +1,8 @@
+# gitignore file for WordPress Core
+
+# Files and folders related to build/test tools
+/node_modules
+/vendor
+
+# Operating system specific files
+.DS_Store

@@ -1,0 +1,16 @@
+{
+  "name": "stuurlui",
+  "version": "1.0.0",
+  "description": "A WordPress theme built by Stuurlui",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "wordpress",
+    "theme",
+    "fse",
+    "gutenberg",
+    "stuurlui"
+  ],
+  "author": "Tom de Visser",
+  "license": "ISC"
+}
