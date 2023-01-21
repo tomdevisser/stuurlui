@@ -8,6 +8,10 @@ This is the official FSE theme used by Stuurlui, a WordPress comany from Utrecht
 
 For building assets we're using the official `@wordpress/scripts` package from WordPress. We're tweaking it a little bit in our `webpack.config.js` in order to have multiple blocks in our theme.
 
+1. In the root folder, run `npm install`
+2. After installing, run `npm run start`
+3. Webpack runs!
+
 ### Adding a new block
 
 Usually blocks are supposed to be living in plugins. To accomodate them all in this theme, I've made a few tweaks in registering, compiling and loading blocks. In order to add one, there are a few simple steps:
