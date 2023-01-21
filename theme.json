@@ -146,6 +146,21 @@
 			"text": "var(--wp--preset--color--white)"
 		},
 		"elements": {
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--tertiary)"
+				},
+				":hover": {
+					"typography": {
+						"textDecoration": "none"
+					}
+				},
+				":visited": {
+					"color": {
+						"text": "var(--wp--preset--color--tertiary)"
+					}
+				}
+			},
 			"h1": {
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--heading-1)"
