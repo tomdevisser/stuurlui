@@ -95,7 +95,33 @@
 		},
 		"color": {
 			"defaultPalette": false,
-			"palette": []
+			"palette": [
+				{
+					"name": "Primary",
+					"slug": "primary",
+					"color": "#243363"
+				},
+				{
+					"name": "Secondary",
+					"slug": "secondary",
+					"color": "#3dde96"
+				},
+				{
+					"name": "Tertiary",
+					"slug": "tertiary",
+					"color": "#47b3c2"
+				},
+				{
+					"name": "Quaternary",
+					"slug": "quaternary",
+					"color": "#5547c2"
+				},
+				{
+					"name": "White",
+					"slug": "white",
+					"color": "#fff"
+				}
+			]
 		},
 		"layout": {},
 		"spacing": {
@@ -107,7 +133,10 @@
 			"fontFamily": "var(--wp--preset--font-family--ubuntu)",
 			"fontSize": "var(--wp--preset--font-size--body)"
 		},
-		"color": {},
+		"color": {
+			"background": "var(--wp--preset--color--primary)",
+			"text": "var(--wp--preset--color--white)"
+		},
 		"elements": {
 			"h1": {
 				"typography": {
@@ -138,8 +167,14 @@
 		"blocks": {
 			"core/button": {
 				"typography": {
-					"textTransform": "uppercase"
-				}
+					"textTransform": "uppercase",
+					"fontWeight": "700"
+				},
+				"color": {
+					"background": "var(--wp--preset--color--secondary)",
+					"text": "var(--wp--preset--color--primary)"
+				},
+				"shadow": "0px 1px 20px #3DDE9699"
 			}
 		}
 	},
