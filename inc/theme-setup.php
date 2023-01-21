@@ -34,3 +34,18 @@ function strl_mime_types( $t ) {
 	return $t;
 }
 add_filter( 'upload_mimes', 'strl_mime_types' );
+
+/**
+ * Require all custom post type registration files.
+ *
+ * @package strl
+ */
+if ( file_exists( get_template_directory() . '/post-types' ) ) {
+	$strl_cpt_files = glob( get_template_directory() . '/post-types/*.php' );
+
+	// Auto require all found post types.
+	foreach ( $strl_cpt_files as $strl_cpt_file ) {
+		require $strl_cpt_file;
+	};
+};
+

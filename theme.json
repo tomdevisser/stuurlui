@@ -138,6 +138,7 @@
 			}
 		},
 		"typography": {
+			"lineHeight": "1.6",
 			"fontFamily": "var(--wp--preset--font-family--ubuntu)",
 			"fontSize": "var(--wp--preset--font-size--body)"
 		},
@@ -146,6 +147,11 @@
 			"text": "var(--wp--preset--color--white)"
 		},
 		"elements": {
+			"heading": {
+				"typography": {
+					"lineHeight": "1.4"
+				}
+			},
 			"link": {
 				"color": {
 					"text": "var(--wp--preset--color--tertiary)"
