@@ -4,6 +4,14 @@ This is the official FSE theme used by Stuurlui, a WordPress comany from Utrecht
 
 ## Usage
 
+### Adding a new block
+
+Usually blocks are supposed to be living in plugins. To accomodate them all in this theme, I've made a few tweaks in registering, compiling and loading blocks. In order to add one, there are a few simple steps:
+
+1. Add your block folder in `/blocks` and change the name on all occurances
+2. Add the index.js entry point to webpack.config.js
+3. That's really all, everything else gets done automatically :)
+
 ## General
 
 ## Roadmap

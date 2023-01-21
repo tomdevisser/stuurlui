@@ -11,8 +11,8 @@
 		"html": false
 	},
 	"textdomain": "pretitle",
-	"editorScript": "file:./../../build/blocks.js",
-	"editorStyle": "file:./../../build/blocks.css",
-	"style": "file:./../../build/style-blocks.css",
+	"editorScript": "file:./../../build/pretitle.js",
+	"editorStyle": "file:./../../build/pretitle.css",
+	"style": "file:./../../build/style-pretitle.css",
 	"render": "file:./render.php"
 }
