@@ -135,7 +135,13 @@
 				}
 			}
 		},
-		"blocks": {}
+		"blocks": {
+			"core/button": {
+				"typography": {
+					"textTransform": "uppercase"
+				}
+			}
+		}
 	},
 	"customTemplates": [],
 	"templateParts": []
