@@ -2,6 +2,36 @@
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 2,
 	"settings": {
+		"typography": {
+			"fontFamilies": [
+				{
+					"name": "Ubuntu",
+					"slug": "ubuntu",
+					"fontFamily": "Ubuntu, sans-serif",
+					"fontFace": [
+						{
+							"fontFamily": "Ubuntu",
+							"fontWeight": "400",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [
+								"file:./assets/fonts/ubuntu-regular.woff2"
+							]
+						},
+						{
+							"fontFamily": "Ubuntu",
+							"fontWeight": "700",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [
+								"file:./assets/fonts/ubuntu-700.woff2"
+							]
+						}
+					]
+				}
+			],
+			"fontSizes": []
+		},
 		"color": {
 			"defaultPalette": false,
 			"palette": []
@@ -9,24 +39,15 @@
 		"layout": {},
 		"spacing": {
 			"customSpacingSize": false
-		},
-		"typography": {
-			"fontFamilies": [
-				{
-					"name": "",
-					"slug": "",
-					"fontFamily": "",
-					"fontFace": []
-				}
-			],
-			"fontSizes": []
 		}
 	},
 	"styles": {
-		"blocks": {},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--ubuntu)"
+		},
 		"color": {},
-		"typography": {},
-		"elements": {}
+		"elements": {},
+		"blocks": {}
 	},
 	"customTemplates": [],
 	"templateParts": []
