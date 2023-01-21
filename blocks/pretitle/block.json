@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "strl/pretitle",
+	"version": "0.1.0",
+	"title": "Pretitle",
+	"category": "text",
+	"icon": "smiley",
+	"description": "A short text to place before the actual title.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "pretitle",
+	"editorScript": "file:./../../build/blocks.js",
+	"editorStyle": "file:./../../build/blocks.css",
+	"style": "file:./../../build/style-blocks.css",
+	"render": "file:./render.php"
+}

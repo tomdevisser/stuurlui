@@ -3,7 +3,9 @@
 	"version": "1.0.0",
 	"description": "A WordPress theme built by Stuurlui",
 	"main": "index.js",
-	"scripts": {},
+	"scripts": {
+		"start": "wp-scripts start"
+	},
 	"keywords": [
 		"wordpress",
 		"theme",

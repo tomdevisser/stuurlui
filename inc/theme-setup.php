@@ -7,6 +7,13 @@
  */
 
 /**
+ * Sets up everything around blocks and block patterns.
+ *
+ * @package strl
+ */
+require 'blocks.php';
+
+/**
  * Unregisters all block patterns from WordPress core.
  *
  * @package strl

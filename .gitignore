@@ -3,6 +3,7 @@
 # Files and folders related to build/test tools
 /node_modules
 /vendor
+/build
 
 # Operating system specific files
 .DS_Store
