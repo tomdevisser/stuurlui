@@ -123,12 +123,20 @@
 				}
 			]
 		},
-		"layout": {},
+		"layout": {
+			"contentSize": "1168px"
+		},
 		"spacing": {
 			"customSpacingSize": false
 		}
 	},
 	"styles": {
+		"spacing": {
+			"padding": {
+				"left": "20px",
+				"right": "20px"
+			}
+		},
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--ubuntu)",
 			"fontSize": "var(--wp--preset--font-size--body)"
