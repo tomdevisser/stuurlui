@@ -10,6 +10,11 @@
 	"supports": {
 		"html": false
 	},
+	"attributes": {
+		"text": {
+			"type": "string"
+		}
+	},
 	"textdomain": "pretitle",
 	"editorScript": "file:./../../build/pretitle.js",
 	"editorStyle": "file:./../../build/pretitle.css",

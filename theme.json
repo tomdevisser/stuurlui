@@ -188,6 +188,16 @@
 			}
 		},
 		"blocks": {
+			"strl/pretitle": {
+				"typography": {
+					"textTransform": "uppercase",
+					"fontSize": "var(--wp--preset--font-size--body)",
+					"fontWeight": "700"
+				},
+				"color": {
+					"text": "var(--wp--preset--color--secondary)"
+				}
+			},
 			"core/button": {
 				"typography": {
 					"textTransform": "uppercase",

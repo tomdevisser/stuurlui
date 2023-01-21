@@ -1,11 +1,17 @@
 import { __ } from '@wordpress/i18n';
-import { useBlockProps } from '@wordpress/block-editor';
+import { RichText, useBlockProps } from '@wordpress/block-editor';
 import './editor.scss';
 
-export default function Edit() {
+export default function Edit({ attributes, setAttributes }) {
 	return (
-		<p {...useBlockProps()}>
-			{__('Pretitle – hello from the editor!', 'pretitle')}
-		</p>
+		<div {...useBlockProps()}>
+			<RichText
+				tagName="p"
+				value={ attributes.text }
+				allowedFormats={[]}
+				onChange={ ( text ) => setAttributes( { text } ) }
+				placeholder={ __( 'Pretitle here...', 'strl' ) }
+			/>
+		</div>
 	);
 }
