@@ -17,7 +17,7 @@ function strl_block_course_theme_unregister_patterns() {
 add_action( 'after_setup_theme', 'strl_block_course_theme_unregister_patterns', 15 );
 
 /**
- * Allow SVG uploads.
+ * Allows SVG uploads.
  *
  * @param array $t Mime types keyed by the file extension regex corresponding to those types.
  * @package strl
