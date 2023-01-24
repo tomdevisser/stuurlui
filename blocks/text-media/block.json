@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "strl/textmedia",
+	"version": "0.1.0",
+	"title": "Text & Media",
+	"category": "theme",
+	"icon": "smiley",
+	"description": "A block showing a text and media",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"title": {
+			"type": "string"
+		},
+		"image": {
+			"type":"object"
+		}
+	},
+	"textdomain": "strl",
+	"editorScript": "file:./../../build/textmedia.js",
+	"editorStyle": "file:./../../build/textmedia.css",
+	"style": "file:./../../build/style-textmedia.css",
+	"render": "file:./render.php"
+}
