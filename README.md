@@ -34,7 +34,7 @@ We follow [WordPress' best practices](https://developer.wordpress.org/block-edit
 
 ## Coding Standards
 
-We follow all coding standards as specified by WordPress. To enforce these standards we use the industry standard code linters.
+We follow all [coding standards as specified by WordPress](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/). To enforce these standards we use the industry standard code linters.
 
 ### PHP
 
