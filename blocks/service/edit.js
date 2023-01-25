@@ -37,8 +37,7 @@ export default function Edit({ attributes, setAttributes }) {
 								};
 							})}
 							onChange={(selectedService) => {
-								console.log(selectedService);
-								setAttributes({ service: selectedService });
+								setAttributes({ service: parseInt(selectedService) });
 							}}
 						/>
 					)}
