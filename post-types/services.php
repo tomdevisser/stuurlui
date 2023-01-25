@@ -52,6 +52,30 @@ function strl_register_services_cpt() {
 			'show_in_rest'          => true,
 			'rest_base'             => 'services',
 			'rest_controller_class' => 'WP_REST_Posts_Controller',
+			// wp.data.select( 'core/block-editor' ).getBlocks() can be used.
+			'template'              => array(
+				array(
+					'core/heading',
+					array(
+						'content' => 'Overview',
+						'level'   => 2,
+					),
+				),
+				array(
+					'core/heading',
+					array(
+						'content' => 'Details',
+						'level'   => 2,
+					),
+				),
+				array(
+					'core/embed',
+					array(
+						'providerNameSlug' => 'youtube',
+					),
+				),
+			),
+			'template_lock'         => 'all',
 		)
 	);
 
