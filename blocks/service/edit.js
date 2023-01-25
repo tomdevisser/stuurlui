@@ -19,7 +19,13 @@ export default function Edit({ attributes, setAttributes }) {
 				{isResolving ? (
 					<div>Loading service...</div>
 				) : (
-					<div>{record && <h2>{record.title.raw}</h2>}</div>
+					<div>
+						{record ? (
+							<h2>{record.title.raw}</h2>
+						) : (
+							<p>Please select a service in block settings.</p>
+						)}
+					</div>
 				)}
 			</section>
 			<InspectorControls>
@@ -32,7 +38,7 @@ export default function Edit({ attributes, setAttributes }) {
 							value={service}
 							options={servicesRequest?.records?.map((service) => {
 								return {
-									label: service.title.rendered,
+									label: service.title.raw,
 									value: service.id,
 								};
 							})}

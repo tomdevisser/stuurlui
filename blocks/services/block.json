@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "strl/services",
+	"version": "0.1.0",
+	"title": "Services",
+	"category": "theme",
+	"icon": "smiley",
+	"description": "A block showing selected services, to practice retrieving and selecting posts",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "strl",
+	"editorScript": "file:./../../build/services.js",
+	"editorStyle": "file:./../../build/services.css",
+	"style": "file:./../../build/style-services.css",
+	"render": "file:./render.php"
+}
