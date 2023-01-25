@@ -52,7 +52,7 @@ function strl_register_services_cpt() {
 			'show_in_rest'          => true,
 			'rest_base'             => 'services',
 			'rest_controller_class' => 'WP_REST_Posts_Controller',
-			// wp.data.select( 'core/block-editor' ).getBlocks() can be used.
+			// wp.data.select( 'core/block-editor' ).getBlocks() can be used to see block names and attributes.
 			'template'              => array(
 				array(
 					'core/heading',
@@ -78,7 +78,6 @@ function strl_register_services_cpt() {
 			'template_lock'         => 'all',
 		)
 	);
-
 }
 add_action( 'init', 'strl_register_services_cpt' );
 

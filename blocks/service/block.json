@@ -12,7 +12,7 @@
 	},
 	"attributes": {
 		"service": {
-			"type": "object"
+			"type": "integer"
 		}
 	},
 	"textdomain": "strl",

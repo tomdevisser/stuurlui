@@ -1,16 +1,47 @@
 import { __ } from "@wordpress/i18n";
 import { useBlockProps, InspectorControls } from "@wordpress/block-editor";
-import { useSelect, select } from "@wordpress/data";
+import { useEntityRecords, useEntityRecord } from "@wordpress/core-data";
 import { SelectControl, PanelBody } from "@wordpress/components";
 import "./editor.scss";
 
 export default function Edit({ attributes, setAttributes }) {
+	const servicesRequest = useEntityRecords("postType", "services");
+	const { service } = attributes;
+	const { isResolving, record } = useEntityRecord(
+		"postType",
+		"services",
+		service
+	);
+
 	return (
 		<>
-			<section {...useBlockProps({ className: "service" })}></section>
+			<section {...useBlockProps({ className: "service" })}>
+				{isResolving ? (
+					<div>Loading service...</div>
+				) : (
+					<div>{record && <h2>{record.title.raw}</h2>}</div>
+				)}
+			</section>
 			<InspectorControls>
 				<PanelBody title={__("Service", "strl")}>
-					<SelectControl label={__("Choose a service", "strl")} />
+					{servicesRequest.isResolving ? (
+						<div>Loading services...</div>
+					) : (
+						<SelectControl
+							label={__("Choose a service", "strl")}
+							value={service}
+							options={servicesRequest?.records?.map((service) => {
+								return {
+									label: service.title.rendered,
+									value: service.id,
+								};
+							})}
+							onChange={(selectedService) => {
+								console.log(selectedService);
+								setAttributes({ service: selectedService });
+							}}
+						/>
+					)}
 				</PanelBody>
 			</InspectorControls>
 		</>
