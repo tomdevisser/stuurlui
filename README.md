@@ -20,7 +20,15 @@ Usually blocks are supposed to be living in plugins. To accomodate them all in t
 2. Add the `index.js` entry point to `webpack.config.js`
 3. That's really all, everything else gets done automatically :)
 
+### Adding a new post type
+
+For creating post types we use WP CLI. You can easily run `wp scaffold post-type --prompt` from anywhere within your project, and your post type will be created after a few prompts in the terminal. All post types get their own file in the `/post-types` folder and are easily extendible and automatically translatable.
+
 ## General
+
+### Block design
+
+We follow [WordPress' best practices](https://developer.wordpress.org/block-editor/explanations/user-interface/block-design/) when it comes to block design. Furthermore we combine inner blocks with block wrappers. The default is to use template locking when deciding on blocks for templates, which can be done from the post type registration file.
 
 ## Roadmap
 
