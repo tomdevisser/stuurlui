@@ -9,28 +9,27 @@ import "./editor.scss";
 export default function Edit({ attributes, setAttributes }) {
 	const teamRequest = useEntityRecords("postType", "team");
 	const { team, teamImage } = attributes;
-	const { isResolving, record } = useEntityRecord("postType", "team", team);
+	const { record } = useEntityRecord("postType", "team", team);
+	const { isResolving, record: image } = useEntityRecord(
+		"postType",
+		"attachment",
+		record?.featured_media
+	);
 
 	useEffect(() => {
-		if (record) {
-			const image = wp.data
-				.select("core")
-				.getEntityRecord("postType", "attachment", record.featured_media);
-			console.log(record.featured_media);
-			console.log(image);
-		}
-	}, [record]);
+		setAttributes({ teamImage: image });
+	}, [image]);
 
 	return (
 		<>
 			<section {...useBlockProps({ className: "contact-team" })}>
-				{isResolving ? (
+				{isResolving || !teamImage ? (
 					<div>Loading team member...</div>
 				) : (
 					<div>
-						{record ? (
+						{record && teamImage ? (
 							<>
-								{/* <img src={teamImage.featured_media_src_url} /> */}
+								<img src={teamImage.source_url} />
 								<h2>{record.title.rendered}</h2>
 							</>
 						) : (
