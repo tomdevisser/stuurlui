@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "strl/text-media",
+	"version": "0.1.0",
+	"title": "Text Media",
+	"category": "theme",
+	"icon": "smiley",
+	"description": "A block showing a selected text + media, to practice retrieving and selecting posts",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"imageURL": {
+			"type": "string"
+		},
+		"imageID": {
+			"type": "integer"
+		}
+	},
+	"textdomain": "strl",
+	"editorScript": "file:./../../build/textMedia.js",
+	"editorStyle": "file:./../../build/textMedia.css",
+	"style": "file:./../../build/style-textMedia.css",
+	"render": "file:./render.php"
+}

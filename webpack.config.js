@@ -13,6 +13,9 @@ module.exports = {
 	entry: {
 		service: path.resolve(__dirname, "/blocks/service", "index.js"),
 		services: path.resolve(__dirname, "/blocks/services", "index.js"),
+		homeHeader: path.resolve(__dirname, "/blocks/home-header", "index.js"),
+		textMedia: path.resolve(__dirname, "/blocks/text-media", "index.js"),
+		contactTeam: path.resolve(__dirname, "/blocks/contact-team", "index.js"),
 	},
 	output: {
 		path: path.resolve(__dirname, "build"),

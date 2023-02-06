@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "strl/contact-team",
+	"version": "0.1.0",
+	"title": "Contact Team",
+	"category": "theme",
+	"icon": "smiley",
+	"description": "A block showing a selected contact-team, to practice retrieving and selecting posts",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"team": {
+			"type": "integer"
+		}
+	},
+	"textdomain": "strl",
+	"editorScript": "file:./../../build/contactTeam.js",
+	"editorStyle": "file:./../../build/contactTeam.css",
+	"style": "file:./../../build/style-contactTeam.css",
+	"render": "file:./render.php"
+}

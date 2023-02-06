@@ -1,0 +1,48 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ */
+
+.home-header {
+	align-items: center; // Add option to change this
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding-block: 4rem;
+
+	.pretitle {
+		color: var(--wp--preset--color--secondary);
+		font-size: 1.125rem;
+		font-weight: 700;
+		margin: 0;
+		margin-bottom: 0.5rem;
+		text-transform: uppercase;
+	}
+
+	.block-title {
+		margin: 0;
+	}
+
+	.right-col {
+		position: relative;
+
+		.media-wrapper {
+			aspect-ratio: 16 / 9;
+			overflow: hidden;
+			position: relative;
+		}
+
+		img {
+			height: 100%;
+			object-fit: contain;
+			object-position: center;
+			width: 100%;
+		}
+
+		.image-btn {
+			left: calc(50% - 55px);
+			position: absolute;
+			top: calc(50% - 18px);
+			z-index: 1;
+		}
+	}
+}

@@ -48,4 +48,3 @@ if ( file_exists( get_template_directory() . '/post-types' ) ) {
 		require $strl_cpt_file;
 	};
 };
-

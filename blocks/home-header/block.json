@@ -1,0 +1,32 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "strl/home-header",
+	"version": "0.1.0",
+	"title": "Home Header",
+	"category": "theme",
+	"icon": "smiley",
+	"description": "A block showing a selected home-header, to practice retrieving and selecting posts",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"imageURL": {
+			"type": "string"
+		},
+		"imageID": {
+			"type": "integer"
+		},
+		"pretitle": {
+			"type": "string"
+		},
+		"title": {
+			"type": "string"
+		}
+	},
+	"textdomain": "strl",
+	"editorScript": "file:./../../build/homeHeader.js",
+	"editorStyle": "file:./../../build/homeHeader.css",
+	"style": "file:./../../build/style-homeHeader.css",
+	"render": "file:./render.php"
+}
