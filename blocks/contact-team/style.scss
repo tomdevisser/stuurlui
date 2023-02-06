@@ -2,3 +2,31 @@
  * The following styles get applied both on the front of your site
  * and in the editor.
  */
+
+.contact-team {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	padding-block: 4rem;
+
+	.team-member {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+
+		img {
+			border-radius: 500px;
+			height: 100px;
+			width: 100px;
+		}
+
+		p {
+			margin: 0.5rem 0 0;
+		}
+
+		h2 {
+			font-size: var(--wp--preset--font-size--heading-1);
+			margin: 1rem 0 2rem;
+		}
+	}
+}

@@ -1,14 +1,18 @@
 import { __ } from "@wordpress/i18n";
-import { useBlockProps, InspectorControls } from "@wordpress/block-editor";
+import {
+	useBlockProps,
+	InspectorControls,
+	RichText,
+	InnerBlocks,
+} from "@wordpress/block-editor";
 import { useEntityRecords, useEntityRecord } from "@wordpress/core-data";
-import { select } from "@wordpress/data";
 import { useEffect } from "@wordpress/element";
 import { SelectControl, PanelBody } from "@wordpress/components";
 import "./editor.scss";
 
 export default function Edit({ attributes, setAttributes }) {
+	const { team, teamImage, tagline } = attributes;
 	const teamRequest = useEntityRecords("postType", "team");
-	const { team, teamImage } = attributes;
 	const { record } = useEntityRecord("postType", "team", team);
 	const { isResolving, record: image } = useEntityRecord(
 		"postType",
@@ -26,17 +30,26 @@ export default function Edit({ attributes, setAttributes }) {
 				{isResolving || !teamImage ? (
 					<div>Loading team member...</div>
 				) : (
-					<div>
+					<div className="team-member">
 						{record && teamImage ? (
 							<>
 								<img src={teamImage.source_url} />
-								<h2>{record.title.rendered}</h2>
+								<p>{record.title.rendered}</p>
 							</>
 						) : (
 							<p>Please select a team member in block settings.</p>
 						)}
 					</div>
 				)}
+
+				<RichText
+					tagName="h2"
+					allowedFormats={[]}
+					value={tagline}
+					onChange={(tagline) => setAttributes({ tagline })}
+					placeholder={__("Tagline", "strl")}
+				/>
+				<InnerBlocks allowedBlocks={["core/button", "core/paragraph"]} />
 			</section>
 			<InspectorControls>
 				<PanelBody title={__("Team Member", "strl")}>
