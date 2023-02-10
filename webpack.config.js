@@ -16,6 +16,7 @@ module.exports = {
 		homeHeader: path.resolve(__dirname, "/blocks/home-header", "index.js"),
 		textMedia: path.resolve(__dirname, "/blocks/text-media", "index.js"),
 		contactTeam: path.resolve(__dirname, "/blocks/contact-team", "index.js"),
+		slider: path.resolve(__dirname, "/blocks/slider", "index.js"),
 	},
 	output: {
 		path: path.resolve(__dirname, "build"),

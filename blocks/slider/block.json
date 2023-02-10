@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "strl/slider",
+	"version": "0.1.0",
+	"title": "Slider",
+	"category": "theme",
+	"icon": "smiley",
+	"description": "A block showing a slider",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"slides": {
+			"type": "array",
+			"default": [
+				{
+					"text": "This is your first slide"
+				}
+			]
+		}
+	},
+	"textdomain": "strl",
+	"editorScript": "file:./../../build/slider.js",
+	"editorStyle": "file:./../../build/slider.css",
+	"style": "file:./../../build/style-slider.css",
+	"render": "file:./render.php"
+}
