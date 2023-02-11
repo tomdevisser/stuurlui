@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "strl/slide",
+	"version": "0.1.0",
+	"title": "Slide",
+	"category": "theme",
+	"icon": "smiley",
+	"description": "A block showing a slide",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"text": {
+			"type": "string"
+		}
+	},
+	"textdomain": "strl",
+	"editorScript": "file:./../../build/slide.js",
+	"editorStyle": "file:./../../build/slide.css",
+	"style": "file:./../../build/style-slide.css",
+	"render": "file:./render.php"
+}
