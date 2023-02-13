@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "strl/accordion",
+	"version": "0.1.0",
+	"title": "Accordion",
+	"category": "theme",
+	"icon": "smiley",
+	"description": "An accordion block",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "strl",
+	"editorScript": "file:./../../build/accordion.js",
+	"editorStyle": "file:./../../build/accordion.css",
+	"style": "file:./../../build/style-accordion.css",
+	"render": "file:./render.php"
+}
