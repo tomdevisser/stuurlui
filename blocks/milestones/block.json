@@ -1,0 +1,32 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "strl/milestones",
+	"version": "0.1.0",
+	"title": "Milestones",
+	"category": "theme",
+	"icon": "smiley",
+	"description": "A block showing a selected milestones, to practice retrieving and selecting posts",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"imageURL": {
+			"type": "string"
+		},
+		"imageID": {
+			"type": "integer"
+		},
+		"pretitle": {
+			"type": "string"
+		},
+		"title": {
+			"type": "string"
+		}
+	},
+	"textdomain": "strl",
+	"editorScript": "file:./../../build/milestones.js",
+	"editorStyle": "file:./../../build/milestones.css",
+	"style": "file:./../../build/style-milestones.css",
+	"render": "file:./render.php"
+}

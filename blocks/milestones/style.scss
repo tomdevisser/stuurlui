@@ -1,0 +1,269 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ */
+
+@import "slick";
+@import "slick-theme";
+
+.milestones {
+	padding-block: 4rem;
+
+	.header {
+		text-align: center;
+	}
+
+	.pretitle {
+		color: var(--wp--preset--color--secondary);
+		font-size: 1.125rem;
+		font-weight: 700;
+		margin: 0;
+		margin-bottom: 0.5rem;
+		text-transform: uppercase;
+	}
+
+	.block-title {
+		margin: 0;
+	}
+
+	.slick-list {
+		overflow: visible;
+
+		.slick-slide:not(.slick-active) {
+			visibility: hidden;
+		}
+	}
+
+	div[class*="timelineslider"] {
+		position: relative;
+		z-index: 2;
+		padding: 2rem 0;
+		margin-top: 1.875rem;
+
+		.slick-arrow {
+			position: absolute;
+			top: 0px;
+			transform: translateY(-50%);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50px;
+			transition: all 0.2s linear;
+			cursor: pointer;
+
+			&::before {
+				color: var(--wp--preset--color--tertiary);
+				height: 40px;
+				font-size: 40px;
+				width: 40px;
+			}
+
+			&.slick-prev {
+				left: 0;
+				z-index: 99;
+			}
+
+			&.slick-next {
+				right: 0;
+			}
+
+			&:hover {
+				&::before {
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	div[class*="timelineslider"] {
+		div.slick-dots {
+			margin: 0 auto 0 0;
+			padding: 0.625rem 0 0;
+			list-style: none;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			li {
+				margin-right: 6px;
+
+				button {
+					position: relative;
+					text-indent: -999em;
+					width: 6px;
+					height: 6px;
+					cursor: pointer;
+					border-radius: 3px;
+					transition: all 0.2s linear;
+
+					&::before {
+						color: #fff;
+					}
+				}
+
+				&.slick-active {
+					button {
+						width: 20px;
+
+						&::before {
+							color: var(--wp--preset--color--tertiary);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.timelineslider {
+		position: relative;
+		margin-top: -64px;
+		margin-bottom: -80px;
+		padding: 0 44px;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 30px;
+			left: 58px;
+			width: calc(100% - 120px);
+			border-bottom: 1px dashed rgba(#fff, 0.5);
+		}
+
+		.slick-track {
+			display: flex;
+		}
+
+		.slick-slide {
+			padding: 80px 1rem;
+
+			.slidewrap {
+				position: relative;
+				padding: 2rem;
+				box-shadow: 0px 16px 34px rgba(0, 0, 0, 0.15);
+				background-color: var(--wp--preset--color--quaternary);
+
+				&:before {
+					content: "";
+					position: absolute;
+					top: -20px;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 0 15px 20px 15px;
+					border-color: transparent transparent
+						var(--wp--preset--color--quaternary) transparent;
+				}
+
+				&:after {
+					content: "";
+					position: absolute;
+					top: -85px;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 14px;
+					height: 14px;
+					border-radius: 50px;
+					background-color: var(--wp--preset--color--tertiary);
+				}
+
+				h4,
+				p {
+					color: #fff;
+				}
+
+				p {
+					line-height: 2rem;
+				}
+			}
+		}
+	}
+}
+
+// TABLET
+@media screen and (min-width: 40.063em) and (max-width: 63.9375em) {
+	.timeline {
+		.timelineslider {
+			.timelineslide {
+				.slidewrap {
+					padding: 1.5rem;
+
+					h4 {
+						margin-bottom: 0.25rem;
+					}
+
+					p {
+						line-height: 1.625rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+// MOBILE
+@media screen and (max-width: 39.9375em) {
+	.timeline {
+		.timelineslider {
+			margin-top: 0;
+			padding: 0;
+
+			&:before {
+				width: calc(100% + 1.25rem);
+				left: -0.625rem;
+			}
+
+			.timelineslide {
+				padding: 80px 0.5rem;
+
+				.slidewrap {
+					padding: 2rem 1.875rem;
+					height: 238px;
+
+					h4 {
+						margin-bottom: 0.5rem;
+					}
+				}
+			}
+		}
+
+		div[class*="timelinedots"] {
+			display: flex;
+			align-items: flex-start;
+			height: 100%;
+			padding-top: 0.875rem;
+
+			ul.slick-dots {
+				padding: 0 0 0 8px;
+
+				li {
+					line-height: 6px;
+					max-height: 6px;
+				}
+			}
+		}
+
+		div[class*="timelinearrows"] {
+			padding: 0.875rem 0 0;
+			margin-top: 0;
+			text-align: right;
+
+			.slick-arrow {
+				position: relative;
+				top: auto;
+				transform: none;
+				display: inline-block;
+				margin-right: 8px;
+
+				&.slick-prev {
+					left: auto;
+				}
+
+				&.slick-next {
+					right: auto;
+				}
+			}
+		}
+	}
+}

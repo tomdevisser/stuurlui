@@ -18,6 +18,7 @@ module.exports = {
 		contactTeam: path.resolve(__dirname, "/blocks/contact-team", "index.js"),
 		slider: path.resolve(__dirname, "/blocks/slider", "index.js"),
 		slide: path.resolve(__dirname, "/blocks/slide", "index.js"),
+		milestones: path.resolve(__dirname, "/blocks/milestones", "index.js"),
 	},
 	output: {
 		path: path.resolve(__dirname, "build"),
