@@ -1,14 +1,8 @@
 import { __ } from "@wordpress/i18n";
 import { useBlockProps, RichText } from "@wordpress/block-editor";
 import { useEntityRecords } from "@wordpress/core-data";
-// import { Navigation, Pagination, A11y } from "swiper";
-// import { Swiper, SwiperSlide } from "swiper/react";
 import Slider from "react-slick";
 import "./editor.scss";
-// import "swiper/css";
-// import "swiper/css/navigation";
-// import "swiper/css/pagination";
-// import "swiper/css/scrollbar";
 
 export default function Edit(props) {
 	const { attributes, setAttributes } = props;
