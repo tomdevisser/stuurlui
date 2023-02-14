@@ -1,5 +1,6 @@
 import { __ } from "@wordpress/i18n";
 import { useBlockProps, RichText } from "@wordpress/block-editor";
+import { rawHandler } from "@wordpress/blocks";
 import { useEntityRecords } from "@wordpress/core-data";
 import Slider from "react-slick";
 import "./editor.scss";
@@ -47,11 +48,14 @@ export default function Edit(props) {
 								<div className="timelineslide">
 									<div className="slidewrap">
 										<h4>{milestone.title.rendered}</h4>
-										<div
-											dangerouslySetInnerHTML={{
-												__html: milestone.content.rendered,
-											}}
-										></div>
+										<div>
+											{
+												rawHandler({
+													HTML: milestone.content.rendered,
+													mode: "BLOCKS",
+												})[0].attributes.content
+											}
+										</div>
 									</div>
 								</div>
 							);
