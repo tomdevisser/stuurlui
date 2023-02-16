@@ -26,7 +26,7 @@ export default function Edit(props) {
 				/>
 				<RichText
 					allowedFormats={[]}
-					tagName="h2"
+					tagName="h1"
 					className="block-title"
 					value={title}
 					placeholder={__("Here goes the block title...", "strl")}

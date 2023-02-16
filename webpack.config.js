@@ -11,6 +11,7 @@ const defaultConfig = require("@wordpress/scripts/config/webpack.config.js");
 module.exports = {
 	...defaultConfig,
 	entry: {
+		strlStyles: path.resolve(__dirname, "/src/scss", "styles.scss"),
 		service: path.resolve(__dirname, "/blocks/service", "index.js"),
 		services: path.resolve(__dirname, "/blocks/services", "index.js"),
 		homeHeader: path.resolve(__dirname, "/blocks/home-header", "index.js"),

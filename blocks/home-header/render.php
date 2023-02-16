@@ -12,7 +12,7 @@ $strl_image_url = ! empty( $attributes['imageURL'] ) ? $attributes['imageURL'] :
 <section <?php echo wp_kses_post( get_block_wrapper_attributes( array( 'class' => 'home-header' ) ) ); ?>>
 	<div class="left-col">
 		<p class="pretitle"><?php echo esc_html( $strl_pretitle ); ?></p>
-		<h2 class="block-title"><?php echo esc_html( $strl_title ); ?></h2>
+		<h1 class="block-title"><?php echo esc_html( $strl_title ); ?></h1>
 	</div>
 	<div class="right-col">
 		<div class="media-wrapper">
