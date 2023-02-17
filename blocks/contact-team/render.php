@@ -14,7 +14,7 @@ $strl_img     = get_the_post_thumbnail_url( $strl_team );
 	<div class="team-member">
 		<img src="<?php echo esc_html( $strl_img ); ?>" />
 		<p><?php echo esc_html( $strl_name ); ?></p>
-		<h2><?php echo esc_html( $strl_tagline ); ?></h2>
+		<h3><?php echo esc_html( $strl_tagline ); ?></h3>
 		<?php echo wp_kses_post( $content ); ?>
 	</div>
 </section>

@@ -24,7 +24,7 @@
 	}
 
 	.tab-titles {
-		margin: 1.875rem 0 0;
+		margin: 2.875rem 0;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -44,7 +44,8 @@
 			text-decoration-thickness: 2px;
 			text-decoration-color: rgba(255, 255, 255, 0.5);
 
-			&:hover {
+			&:hover,
+			&.active {
 				cursor: pointer;
 				text-decoration-style: solid;
 				text-decoration-color: #47b3c2;
@@ -54,16 +55,21 @@
 
 	.tabs-content {
 		.tab-content {
-			display: grid;
+			display: none;
+
+			&.active {
+				display: grid;
+			}
 			grid-template-columns: 1fr 1fr;
 			padding: 2rem;
 
-			.right-col {
+			.content-wrapper {
 				background-color: var(--wp--preset--color--quaternary);
 				box-shadow: 0 20px 60px rgb(0 0 0 / 15%);
 				padding: 4rem;
 
-				h2 {
+				h2,
+				h3 {
 					margin-top: 0;
 				}
 

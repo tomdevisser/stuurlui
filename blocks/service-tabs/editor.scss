@@ -1,3 +1,11 @@
 /**
  * The following styles get applied inside the editor only.
  */
+
+.service-tabs {
+	.tabs-content {
+		.tab-content {
+			display: grid;
+		}
+	}
+}

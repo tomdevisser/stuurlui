@@ -105,18 +105,20 @@ export default function Edit(props) {
 							)}
 						</div>
 						<div className="right-col">
-							<h2>{activeServiceRecord.title.raw}</h2>
-							{
-								rawHandler({
-									HTML: activeServiceRecord.content.rendered,
-									mode: "BLOCKS",
-								})[0].attributes.content
-							}
-							<p>
-								<a href={activeServiceRecord.link} className="btn">
-									Meer info
-								</a>
-							</p>
+							<div className="content-wrapper">
+								<h2>{activeServiceRecord.title.raw}</h2>
+								{
+									rawHandler({
+										HTML: activeServiceRecord.content.rendered,
+										mode: "BLOCKS",
+									})[0].attributes.content
+								}
+								<p>
+									<a href={activeServiceRecord.link} className="btn">
+										Meer info
+									</a>
+								</p>
+							</div>
 						</div>
 					</div>
 				)}
