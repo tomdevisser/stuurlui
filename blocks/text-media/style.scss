@@ -7,14 +7,16 @@
 	align-items: center; // Add option to change this
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	padding-block: 4rem;
+	margin-block: 10rem;
 
 	.left-col {
+		height: 100%;
 		position: relative;
 
 		.media-wrapper {
-			aspect-ratio: 16 / 9;
+			height: 100%;
 			overflow: hidden;
+			padding-right: 3rem;
 			position: relative;
 		}
 

@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "strl/service-tabs",
+	"version": "0.1.0",
+	"title": "Service Tabs",
+	"category": "theme",
+	"icon": "smiley",
+	"description": "A block showing selected services, to practice retrieving and selecting posts",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"pretitle": {
+			"type": "string"
+		},
+		"title": {
+			"type": "string"
+		},
+		"services": {
+			"type": "array"
+		},
+		"activeService": {
+			"type": "integer"
+		},
+		"activeServiceImage": {
+			"type": "object"
+		}
+	},
+	"textdomain": "strl",
+	"editorScript": "file:./../../build/serviceTabs.js",
+	"editorStyle": "file:./../../build/serviceTabs.css",
+	"style": "file:./../../build/style-serviceTabs.css",
+	"render": "file:./render.php"
+}

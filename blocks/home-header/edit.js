@@ -4,6 +4,7 @@ import {
 	MediaUploadCheck,
 	useBlockProps,
 	RichText,
+	InnerBlocks,
 } from "@wordpress/block-editor";
 import "./editor.scss";
 import { Button } from "@wordpress/components";
@@ -34,31 +35,9 @@ export default function Edit(props) {
 				/>
 			</div>
 			<div className="right-col">
-				{props.isSelected && (
-					<MediaUploadCheck>
-						<MediaUpload
-							value={imageID}
-							title={__("Choose an image", "chaos")}
-							onSelect={(media) =>
-								setAttributes({
-									imageURL: media.url,
-									imageID: media.url,
-								})
-							}
-							allowedTypes={ALLOWED_MEDIA_TYPES}
-							render={({ open }) => (
-								<Button variant="primary" onClick={open} className="image-btn">
-									{imageURL ? "Change Image" : "Upload Image"}
-								</Button>
-							)}
-						/>
-					</MediaUploadCheck>
-				)}
-				{imageURL && (
-					<div className="media-wrapper">
-						<img src={imageURL} />
-					</div>
-				)}
+				<div className="media-wrapper">
+					<InnerBlocks />
+				</div>
 			</div>
 		</section>
 	);

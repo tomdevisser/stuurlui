@@ -12,18 +12,11 @@ module.exports = {
 	...defaultConfig,
 	entry: {
 		strlStyles: path.resolve(__dirname, "/src/scss", "styles.scss"),
-		service: path.resolve(__dirname, "/blocks/service", "index.js"),
-		services: path.resolve(__dirname, "/blocks/services", "index.js"),
 		homeHeader: path.resolve(__dirname, "/blocks/home-header", "index.js"),
 		textMedia: path.resolve(__dirname, "/blocks/text-media", "index.js"),
 		contactTeam: path.resolve(__dirname, "/blocks/contact-team", "index.js"),
 		milestones: path.resolve(__dirname, "/blocks/milestones", "index.js"),
-		accordion: path.resolve(__dirname, "/blocks/accordion", "index.js"),
-		accordionItem: path.resolve(
-			__dirname,
-			"/blocks/accordion-item",
-			"index.js"
-		),
+		serviceTabs: path.resolve(__dirname, "/blocks/service-tabs", "index.js"),
 	},
 	output: {
 		path: path.resolve(__dirname, "build"),

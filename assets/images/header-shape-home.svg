@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="660" viewBox="0 0 1920 660">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_272" data-name="Rectangle 272" width="1920" height="660" transform="translate(-23982 -21546)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="header-shape-home" transform="translate(23982 21546)" clip-path="url(#clip-path)">
+    <g id="Element_Wave_violet_2" data-name="Element Wave violet 2" transform="translate(-24305 -21520)">
+      <path id="Path_488" data-name="Path 488" d="M2590.29,726.79c-173.267-70.706-373.394-471.225-587.649-442.708C1574.975,341,1361.143,839.056,933.481,850.44c-345.974,9.209-705-306.6-932.188-446.426l0-52.386c216.983,57.089,502.271,126.849,767.241,121.614,427.661-8.451,793.882-224.424,1221.548-237.1,286.187-8.482,394.779,58.355,600.211,111.969Z" transform="translate(-1.289 -235.41)" fill="#5547c2" opacity="0.6"/>
+      <line id="Line_68" data-name="Line 68" x2="0.01" transform="translate(1536.778 290.973)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Path_489" data-name="Path 489" d="M2001.914,523.866c-117.984-77.26-224.728-156.952-312.008-210.67V297.234h0V676.448C1804.381,662.038,1910.352,586.77,2001.914,523.866Z" transform="translate(-1689.903 -144.592)" fill="#1b264a"/>
+      <path id="Path_490" data-name="Path 490" d="M1527.137,657.112c109.419-2.162,214.811-17.927,318.245-40.378-132.2-57.012-282.185-106.472-424.146-101.3-118.5,4.311-214.4,48.531-304.943,102.543C1250.647,642.829,1391.55,659.792,1527.137,657.112Z" transform="translate(-759.895 -419.279)" fill="#1b264a"/>
+      <path id="Path_491" data-name="Path 491" d="M735.486,427.254c-194.268,25.856-344.413,142.738-490.52,263.681,72.442,26.806,150.468,47.4,227.158,46.065,203.97-3.555,305.955-159.1,509.928-176.876a120.809,120.809,0,0,1,12.5-.415C911.25,477.744,824.59,415.394,735.486,427.254Z" transform="translate(1265.867 -378.582)" fill="#1b264a"/>
+    </g>
+  </g>
+</svg>

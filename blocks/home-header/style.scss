@@ -7,7 +7,19 @@
 	align-items: center; // Add option to change this
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	padding-block: 4rem;
+	margin-bottom: 9rem;
+
+	.left-col {
+		padding-block: 7.5rem;
+	}
+
+	.right-col {
+		height: 100%;
+
+		.media-wrapper {
+			height: 100%;
+		}
+	}
 
 	.pretitle {
 		color: var(--wp--preset--color--secondary);
@@ -32,7 +44,6 @@
 		position: relative;
 
 		.media-wrapper {
-			aspect-ratio: 16 / 9;
 			overflow: hidden;
 			position: relative;
 		}

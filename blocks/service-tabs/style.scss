@@ -1,0 +1,95 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ */
+
+.service-tabs {
+	padding-block: 4rem;
+
+	.block-header {
+		text-align: center;
+	}
+
+	.block-title {
+		margin: 0;
+	}
+
+	.pretitle {
+		color: var(--wp--preset--color--secondary);
+		font-size: 1.125rem;
+		font-weight: 700;
+		margin: 0;
+		margin-bottom: 0.5rem;
+		text-transform: uppercase;
+	}
+
+	.tab-titles {
+		margin: 1.875rem 0 0;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 1rem;
+		justify-content: center;
+
+		.tab-title {
+			position: relative;
+			display: block;
+			line-height: 1.125rem;
+			white-space: nowrap;
+			padding: 0.25rem 0;
+			transition: all 0.2s linear;
+			text-decoration: underline;
+			text-underline-offset: 4px;
+			text-decoration-style: dotted;
+			text-decoration-thickness: 2px;
+			text-decoration-color: rgba(255, 255, 255, 0.5);
+
+			&:hover {
+				cursor: pointer;
+				text-decoration-style: solid;
+				text-decoration-color: #47b3c2;
+			}
+		}
+	}
+
+	.tabs-content {
+		.tab-content {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			padding: 2rem;
+
+			.right-col {
+				background-color: var(--wp--preset--color--quaternary);
+				box-shadow: 0 20px 60px rgb(0 0 0 / 15%);
+				padding: 4rem;
+
+				h2 {
+					margin-top: 0;
+				}
+
+				.btn {
+					background-color: #3dde96;
+					border: 2px solid #3dde96;
+					border-radius: 50px;
+					color: #243363;
+					cursor: pointer;
+					display: inline-block;
+					font-size: 0.875rem;
+					font-weight: 700;
+					line-height: 0.875rem;
+					margin-top: 2rem;
+					padding: 0.7rem 1.25rem;
+					text-decoration: none;
+					text-transform: uppercase;
+					transition: all 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+
+					&:hover {
+						background-color: #3dde96;
+						box-shadow: 0 1px 20px rgb(61 222 150 / 60%);
+						padding: 0.5rem 1.25rem 0.9rem;
+					}
+				}
+			}
+		}
+	}
+}

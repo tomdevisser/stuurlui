@@ -43,7 +43,7 @@ function strl_register_services_cpt() {
 			'hierarchical'          => false,
 			'show_ui'               => true,
 			'show_in_nav_menus'     => true,
-			'supports'              => array( 'title', 'editor' ),
+			'supports'              => array( 'title', 'editor', 'thumbnail' ),
 			'has_archive'           => true,
 			'rewrite'               => true,
 			'query_var'             => true,
@@ -53,29 +53,29 @@ function strl_register_services_cpt() {
 			'rest_base'             => 'services',
 			'rest_controller_class' => 'WP_REST_Posts_Controller',
 			// wp.data.select( 'core/block-editor' ).getBlocks() can be used to see block names and attributes.
-			'template'              => array(
-				array(
-					'core/heading',
-					array(
-						'content' => 'Overview',
-						'level'   => 2,
-					),
-				),
-				array(
-					'core/heading',
-					array(
-						'content' => 'Details',
-						'level'   => 2,
-					),
-				),
-				array(
-					'core/embed',
-					array(
-						'providerNameSlug' => 'youtube',
-					),
-				),
-			),
-			'template_lock'         => 'all',
+			// 'template'              => array(
+			// 	array(
+			// 		'core/heading',
+			// 		array(
+			// 			'content' => 'Overview',
+			// 			'level'   => 2,
+			// 		),
+			// 	),
+			// 	array(
+			// 		'core/heading',
+			// 		array(
+			// 			'content' => 'Details',
+			// 			'level'   => 2,
+			// 		),
+			// 	),
+			// 	array(
+			// 		'core/embed',
+			// 		array(
+			// 			'providerNameSlug' => 'youtube',
+			// 		),
+			// 	),
+			// ),
+			// 'template_lock'         => 'all',
 		)
 	);
 }

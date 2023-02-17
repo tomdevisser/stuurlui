@@ -16,7 +16,7 @@ $strl_image_url = ! empty( $attributes['imageURL'] ) ? $attributes['imageURL'] :
 	</div>
 	<div class="right-col">
 		<div class="media-wrapper">
-			<img src="<?php echo esc_html( $strl_image_url ); ?>" />
+			<?php echo $content; ?>
 		</div>
 	</div>
 </section>
