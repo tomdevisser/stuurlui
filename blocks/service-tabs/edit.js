@@ -11,7 +11,6 @@ import "./editor.scss";
 import { useEffect } from "@wordpress/element";
 
 export default function Edit(props) {
-	console.log(props);
 	const { attributes, setAttributes } = props;
 	const { title, pretitle, services, activeService } = attributes;
 	const serviceRequest = useEntityRecords("postType", "services");
