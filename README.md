@@ -1,6 +1,6 @@
 # Stuurlui
 
-This is the official FSE theme used by Stuurlui, a WordPress comany from Utrecht.
+This is the official FSE theme used by Stuurlui, a WordPress comany from Utrecht. **The project has been moved to a private GitLab repository.**
 
 ## Usage
 
